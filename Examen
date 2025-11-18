@@ -1,0 +1,23 @@
+1. Entradas: A, B, C, D
+2. Compuertas:
+- AND
+- OR
+- NOT
+- XOR
+Pasos para construir el circuito:
+ 
+1. A AND B: Utiliza una compuerta AND con entradas A y B.
+
+2. NOT C: Utiliza una compuerta NOT con entrada C.
+
+3. (A AND B) OR (NOT C): Utiliza una compuerta OR con las salidas de los pasos 1 y 2 como entradas.
+
+4. NOT [(A AND B) OR (NOT C)]: Utiliza una compuerta NOT con la salida del paso 3 como entrada.
+
+5. NOT B: Utiliza una compuerta NOT con entrada B.
+
+6. A AND (NOT B): Utiliza una compuerta AND con entradas A y la salida del paso 5.
+
+7. D OR (A AND (NOT B)): Utiliza una compuerta OR con entradas D y la salida del paso 6.
+
+8. XOR: Utiliza una compuerta XOR con las salidas de los pasos 4 y 7. La salida de esta compuerta es Y.
